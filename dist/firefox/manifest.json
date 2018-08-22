@@ -1,8 +1,8 @@
 {
   "name": "Growser",
-  "short_name": "Growser",
   "description": "A browser plugin that injects and runs Jasmine tests into a Liferay DXP web site",
   "version": "1.0.0",
+  "short_name": "Growser",
   "manifest_version": 2,
   "default_locale": "en",
   "icons": {
@@ -19,9 +19,13 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://grow.liferay.com/*"],
-      "css": ["styles/jasmine.css"],
-      "js" : [
+      "matches": [
+        "https://grow.liferay.com/*"
+      ],
+      "css": [
+        "styles/jasmine.css"
+      ],
+      "js": [
         "libs/jasmine.js",
         "libs/jasmine-html.js",
         "libs/boot.js",
@@ -32,8 +36,12 @@
       "all_frames": false
     },
     {
-      "matches": ["https://grow.liferay.com/web/*"],
-      "js" : ["tests/user-profile-theme-tests.js"],
+      "matches": [
+        "https://grow.liferay.com/web/*"
+      ],
+      "js": [
+        "tests/user-profile-theme-tests.js"
+      ],
       "run_at": "document_end",
       "all_frames": false
     }
@@ -42,7 +50,7 @@
     "https://*/",
     "tabs"
   ],
-    "applications": {
+  "applications": {
     "gecko": {
       "id": "alfonso.crisci.it@gmail.com"
     }

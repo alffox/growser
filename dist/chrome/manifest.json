@@ -1,45 +1,58 @@
 {
-  "name": "__MSG_appName__",
-  "description": "__MSG_appDescription__",
-  "version": "0.0.0",
-  "short_name": "__MSG_appShortName__",
+  "name": "Growser",
+  "description": "A browser plugin that injects and runs Jasmine tests into a Liferay DXP web site",
+  "version": "1.0.0",
+  "short_name": "Growser",
   "manifest_version": 2,
   "default_locale": "en",
   "icons": {
     "16": "images/icon-16.png",
-    "128": "images/icon-128.png"
-  },
-  "background": {
-    "scripts": [
-      "scripts/background.js"
-    ]
+    "96": "images/icon-96.png"
   },
   "browser_action": {
     "default_icon": {
-      "19": "images/icon-19.png",
-      "38": "images/icon-38.png"
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png"
     },
-    "default_title": "__MSG_browserActionTitle__",
+    "default_title": "Growser",
     "default_popup": "pages/popup.html"
   },
   "content_scripts": [
     {
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "https://grow.liferay.com/*"
       ],
       "css": [
-        "styles/contentscript.css"
+        "styles/jasmine.css"
       ],
       "js": [
-        "scripts/contentscript.js"
+        "libs/jasmine.js",
+        "libs/jasmine-html.js",
+        "libs/boot.js",
+        "libs/jquery-1.7.2.min.js",
+        "libs/jasmine-jquery.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    },
+    {
+      "matches": [
+        "https://grow.liferay.com/web/*"
+      ],
+      "js": [
+        "tests/user-profile-theme-tests.js"
       ],
       "run_at": "document_end",
       "all_frames": false
     }
   ],
   "permissions": [
-    "tabs",
-    "<all_urls>"
-  ]
+    "https://*/",
+    "tabs"
+  ],
+  "background": {
+    "scripts": [
+      "webextension-toolbox/client.js"
+    ]
+  }
 }
