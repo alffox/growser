@@ -41,10 +41,5 @@
   "permissions": [
     "https://*/",
     "tabs"
-  ],
-    "applications": {
-    "gecko": {
-      "id": "alfonso.crisci.it@gmail.com"
-    }
-  }
+  ]
 }
