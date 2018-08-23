@@ -34,7 +34,7 @@ Chrome FAQ's on extensions: https://developers.chrome.com/extensions/faq
 
 Learn more at: https://developer.mozilla.org/en-US/docs/Tools/about:debugging#Enabling_add-on_debugging
 
-## How to add more test ?
+## How to add more tests ?
 
 1) Write your Jasmine tests suite and save it in a .js file at: https://github.com/alffox/growser/tree/master/app/tests
 2) Add your URL pattern and tests suite file at https://github.com/alffox/growser/blob/master/app/manifest.json within the `"content_scripts"` element, for example:
