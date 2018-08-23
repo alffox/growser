@@ -53,8 +53,8 @@ Learn more at: https://developer.mozilla.org/en-US/docs/Tools/about:debugging#En
 
 Please check these resources:
 
-https://github.com/webextension-toolbox/webextension-toolbox
-https://github.com/webextension-toolbox/generator-web-extension
+- https://github.com/webextension-toolbox/webextension-toolbox
+- https://github.com/webextension-toolbox/generator-web-extension
 
 ## How to build it manually ?
 
