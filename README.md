@@ -47,11 +47,12 @@ Learn more at: https://developer.mozilla.org/en-US/docs/Tools/about:debugging#En
       "all_frames": false
     }
 ```
-3) Rebuild the app with the [automated](https://github.com/alffox/growser#how-to-build-and-develop-it-) or the [manual]() method
+3) Rebuild the app with the [automated](https://github.com/alffox/growser#how-to-build-and-develop-it-automatically-) or the [manual](https://github.com/alffox/growser#how-to-build-it-manually-) method
 
 ## How to build and develop it automatically ?
 
 Please check these resources:
+
 https://github.com/webextension-toolbox/webextension-toolbox
 https://github.com/webextension-toolbox/generator-web-extension
 
