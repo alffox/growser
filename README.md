@@ -29,7 +29,7 @@ Chrome FAQ's on extensions: https://developers.chrome.com/extensions/faq
 1) Get the standalone plugin with `.firefox` string appended to the filename (e.g.: `growser.v1.0.0.firefox.zip`), this is at: https://github.com/alffox/growser/tree/master/extensions
 2) Type `about:debugging#addons` in your address bar and hit enter
 3) Click on `Load Temporary Add-on...` on the top-right side of the column
-4) Select your firefox plugin. The plugin will be temporarily installed and will appear at the top of the temporary extensions list. Navigate to the pages you wish to test in order to output the related Jasmine test results at the bottom of the page.
+4) Select your Firefox plugin. The plugin will be temporarily installed and will appear at the top of the temporary extensions list. Navigate to the pages you wish to test in order to output the related Jasmine test results at the bottom of the page.
 5) The plugin will be removed automatically upon restarting Firefox
 
 Learn more at: https://developer.mozilla.org/en-US/docs/Tools/about:debugging#Enabling_add-on_debugging
@@ -47,12 +47,26 @@ Learn more at: https://developer.mozilla.org/en-US/docs/Tools/about:debugging#En
       "all_frames": false
     }
 ```
+3) Rebuild the app with the [automated](https://github.com/alffox/growser#how-to-build-and-develop-it-) or the [manual]() method
 
-## How to build and develop it ?
+## How to build and develop it automatically ?
 
 Please check these resources:
 https://github.com/webextension-toolbox/webextension-toolbox
 https://github.com/webextension-toolbox/generator-web-extension
+
+## How to build it manually ?
+
+At times, there may be need to run the plugins locally, temporarily, in developer mode. Follow these methods in order to rebuild the plugin:
+
+### Chrome
+1) Navigate to the app folder and zip all the files and folders contained in it under a conventional name, e.g. `growser.v1.0.0.chrome.zip`
+2) Follow the relevant "How to Install it?" section: https://github.com/alffox/growser#for-chrome
+
+### Firefox
+1) Install web-ext as per these instructions: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Getting_started_with_web-ext
+2) Run the command `web-ext build` from the app folder and get the plugin in the generated `web-ext-artifacts` directory
+3) Follow the relevant "How to Install it?" section: https://github.com/alffox/growser#for-firefox
 
 ## External libraries used
 
