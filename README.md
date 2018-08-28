@@ -65,7 +65,7 @@ At times, there may be need to run the plugins locally, temporarily, in develope
 2) Follow the relevant "How to Install it?" section: https://github.com/alffox/growser#for-chrome
 
 ### Firefox
-1) Install web-ext as per these instructions: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Getting_started_with_web-ext
+1) Install `web-ext` as per these instructions: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Getting_started_with_web-ext
 2) Run the command `web-ext build` from the app folder and get the plugin in the generated `web-ext-artifacts` directory
 3) Follow the relevant "How to Install it?" section: https://github.com/alffox/growser#for-firefox
 
