@@ -19,7 +19,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://grow.liferay.com/*"],
+      "matches": ["http://cloud-10-50-0-58/*"],
       "css": ["styles/jasmine.css"],
       "js" : [
         "libs/jasmine.js",
@@ -32,7 +32,7 @@
       "all_frames": false
     },
     {
-      "matches": ["https://grow.liferay.com/web/*"],
+      "matches": ["http://cloud-10-50-0-58/web/*"],
       "js" : ["tests/user-profile-theme-tests.js"],
       "run_at": "document_end",
       "all_frames": false
