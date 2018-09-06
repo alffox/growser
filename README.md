@@ -16,7 +16,7 @@ After the page will be loaded, the test results will be appearing at the very bo
 
 ### For Chrome:
 
-1) Get the standalone plugin with `.chrome` string appended to the filename (e.g.: `growser.v1.0.0.chrome.zip`), this is at: https://github.com/alffox/growser/tree/master/extensions
+1) Get the standalone plugin with `.chrome` string appended to the filename (e.g.: `growser.v1.0.0.chrome.zip`), this is at: https://drive.google.com/open?id=1ad4pzgBqb9mm0WCY3y7ubN6ny2NvFneL
 2) Type `chrome://extensions/` in your address bar and hit enter
 3) Enable Developer Mode: https://developers.chrome.com/extensions/faq#faq-dev-01
 4) Drag and drop the file into the Chrome Extensions window
@@ -26,7 +26,7 @@ Chrome FAQ's on extensions: https://developers.chrome.com/extensions/faq
 
 ### For Firefox:
 
-1) Get the standalone plugin with `.firefox` string appended to the filename (e.g.: `growser.v1.0.0.firefox.zip`), this is at: https://github.com/alffox/growser/tree/master/extensions
+1) Get the standalone plugin with `.firefox` string appended to the filename (e.g.: `growser.v1.0.0.firefox.zip`), this is at: https://drive.google.com/open?id=1ad4pzgBqb9mm0WCY3y7ubN6ny2NvFneL
 2) Type `about:debugging#addons` in your address bar and hit enter
 3) Click on `Load Temporary Add-on...` on the top-right side of the column
 4) Select your Firefox plugin. The plugin will be temporarily installed and will appear at the top of the temporary extensions list. Navigate to the pages you wish to test in order to output the related Jasmine test results at the bottom of the page.
